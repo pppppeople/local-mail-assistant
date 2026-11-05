@@ -1,0 +1,33 @@
+{
+  "name": "pp-mail-assistant",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "start": "node src/cli.js run",
+    "init": "node src/cli.js init",
+    "status": "node src/cli.js status",
+    "demo": "node scripts/demo.js",
+    "test": "node --test test/*.test.js",
+    "check": "node scripts/check.js",
+    "mail": "node src/cli.js",
+    "setup": "node scripts/setup.js",
+    "install-service": "node scripts/install-service.js",
+    "web": "node src/cli.js web",
+    "web-copy-code": "node src/cli.js web-copy-code",
+    "ai-smoke": "node scripts/ai-smoke.js"
+  },
+  "dependencies": {
+    "@openai/codex-sdk": "0.162.1",
+    "imapflow": "2.4.0",
+    "mailparser": "3.9.38",
+    "nodemailer": "10.1.0"
+  },
+  "devDependencies": {
+    "smtp-server": "3.19.20"
+  },
+  "license": "MIT"
+}

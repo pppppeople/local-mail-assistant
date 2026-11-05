@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PP 邮件助理</title><link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script></head>
+<body>
+<header><div><span class="brand">PP</span><strong>邮件助理</strong><span class="badge">私人收件台</span></div><div><button id="refresh" hidden>刷新</button><button id="logout" hidden>退出</button></div></header>
+<main>
+<section id="login" class="login"><p class="eyebrow">你的邮件，你来决定</p><h1>把收件箱里的事<br>慢慢理清。</h1><p>查看摘要和原邮件，按你的意思拟回复。<br>每封回复都会等你确认后发送。</p><form id="login-form"><label for="code">私人访问码</label><input id="code" type="password" autocomplete="off" required placeholder="粘贴本机复制的访问码"><label class="remember"><input id="remember" type="checkbox" checked>记住这台设备 30 天</label><button class="primary" type="submit">进入收件台</button></form><p class="hint">访问码只用于此页面；无需输入邮箱密码。</p></section>
+<section id="workspace" hidden><div class="intro"><div><p class="eyebrow">收件台</p><h1>先看重要的，再处理其余。</h1></div><p id="status" class="hint"></p></div><div class="columns"><aside><label for="category">邮件分类</label><select id="category"><option value="">全部邮件</option><option value="notification">通知邮件</option><option value="meeting">会议邀请</option><option value="transaction">账单与交易</option><option value="security">账号与安全</option><option value="promotion">推广与订阅</option><option value="conversation">沟通与工作请求</option><option value="other">其他邮件</option></select><div id="mail-list"></div></aside><article id="detail"><div class="empty">选择一封邮件，查看摘要与原文。</div></article></div></section>
+<p id="notice" role="status" aria-live="polite"></p>
+</main></body></html>

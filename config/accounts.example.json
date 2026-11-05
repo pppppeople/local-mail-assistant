@@ -1,0 +1,13 @@
+{
+  "pollSeconds": 60,
+  "maxMessagesPerPoll": 50,
+  "ai": { "provider": "codex", "bin": "codex", "timeoutMs": 120000 },
+  "notification": { "provider": "wechat", "digestHours": [9, 18] },
+  "web": { "enabled": false, "port": 8768 },
+  "accounts": [
+    { "id": "qq-personal", "provider": "qq", "email": "user@example.com", "enabled": false, "passwordEnv": "MAIL_QQ_PASSWORD" },
+    { "id": "gmail-personal", "provider": "gmail", "email": "user@example.com", "enabled": false, "passwordEnv": "MAIL_GMAIL_APP_PASSWORD" },
+    { "id": "icloud-personal", "provider": "icloud", "email": "user@example.com", "enabled": false, "passwordEnv": "MAIL_ICLOUD_APP_PASSWORD" },
+    { "id": "outlook-personal", "provider": "outlook", "email": "user@example.com", "enabled": false, "oauth": { "clientId": "YOUR_MICROSOFT_APP_CLIENT_ID", "tenant": "consumers" } }
+  ]
+}
